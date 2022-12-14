@@ -1,5 +1,8 @@
-package com.sjyt.workshopmanagerapi.schedule
+package com.sjyt.workshopmanagerapi.schedule.schedule
 
+import com.sjyt.workshopmanagerapi.schedule.DefaultScheduleService
+import com.sjyt.workshopmanagerapi.schedule.ScheduleRepository
+import com.sjyt.workshopmanagerapi.schedule.ScheduleService
 import com.sjyt.workshopmanagerapi.schedule.entity.Participant
 import com.sjyt.workshopmanagerapi.schedule.entity.Schedule
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -29,11 +32,10 @@ class DefaultScheduleServiceTest {
     fun `return Let's Workshop!!` () {
         val expectedSchedules = listOf(
             Schedule(
-                0,
                 "halloween workshop",
                 listOf(
                     Participant(
-                        0,
+                        1,
                         "halloween workshop",
                         "taro",
                         "yamada",

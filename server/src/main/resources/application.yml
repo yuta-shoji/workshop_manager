@@ -1,6 +1,14 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${DATABASE_URL}/workshop
+    url: jdbc:postgresql://${DATABASE_URL}/ws_schedule
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
+
+  flyway:
+    locations: classpath:/db/migration
+    baseline-on-migrate: true
+
+logging:
+  level:
+    root: info

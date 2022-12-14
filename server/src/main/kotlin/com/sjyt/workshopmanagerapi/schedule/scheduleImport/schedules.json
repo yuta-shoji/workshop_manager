@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "halloween workshop",
+    "participants": [
+      {
+        "id": 1,
+        "participatingTitle": "halloween workshop",
+        "firstName": "Yuta",
+        "lastName": "Shoji",
+        "age": 24,
+        "parentsFirstName": "Mika",
+        "parentsLastName": "Shoji"
+      },
+      {
+        "id": 2,
+        "participatingTitle": "halloween workshop",
+        "firstName": "Ichiro",
+        "lastName": "Sato",
+        "age": 12,
+        "parentsFirstName": "Yuichiro",
+        "parentsLastName": "Sato"
+      },
+      {
+        "id": 3,
+        "participatingTitle": "halloween workshop",
+        "firstName": "Jiro",
+        "lastName": "Ito",
+        "age": 8,
+        "parentsFirstName": "Yujiro",
+        "parentsLastName": "Sato"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Xmas workshop",
+    "participants": [
+      {
+        "id": 4,
+        "participatingTitle": "Xmas workshop",
+        "firstName": "Saburo",
+        "lastName": "Saito",
+        "age": 6,
+        "parentsFirstName": "Yusaburo",
+        "parentsLastName": "Saito"
+      },
+      {
+        "id": 5,
+        "participatingTitle": "Xmas workshop",
+        "firstName": "Shiro",
+        "lastName": "Kondo",
+        "age": 10,
+        "parentsFirstName": "Yushiro",
+        "parentsLastName": "Kondo"
+      },
+      {
+        "id": 6,
+        "participatingTitle": "Xmas workshop",
+        "firstName": "Goro",
+        "lastName": "Endo",
+        "age": 8,
+        "parentsFirstName": "Yugoro",
+        "parentsLastName": "Endo"
+      }
+    ]
+  }
+]

@@ -1,5 +1,6 @@
-package com.sjyt.workshopmanagerapi.schedule
+package com.sjyt.workshopmanagerapi.schedule.schedule
 
+import com.sjyt.workshopmanagerapi.schedule.ScheduleController
 import com.sjyt.workshopmanagerapi.schedule.entity.Participant
 import com.sjyt.workshopmanagerapi.schedule.entity.Schedule
 import org.hamcrest.CoreMatchers.equalTo
@@ -15,11 +16,10 @@ class ScheduleControllerTest {
     fun `return all workshop schedules`() {
         stubScheduleService.getAllSchedules_returnValue = listOf(
             Schedule(
-                0,
                 "halloween workshop",
                 listOf(
                     Participant(
-                        0,
+                        1,
                         "halloween workshop",
                         "taro",
                         "yamada",

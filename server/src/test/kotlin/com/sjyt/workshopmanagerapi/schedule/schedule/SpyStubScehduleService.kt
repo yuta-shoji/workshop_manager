@@ -1,5 +1,6 @@
-package com.sjyt.workshopmanagerapi.schedule
+package com.sjyt.workshopmanagerapi.schedule.schedule
 
+import com.sjyt.workshopmanagerapi.schedule.ScheduleService
 import com.sjyt.workshopmanagerapi.schedule.entity.Schedule
 
 class StubScheduleService: ScheduleService {
