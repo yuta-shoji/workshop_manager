@@ -1,7 +1,7 @@
 import {ScheduleResults} from "../model/ScheduleResults";
 import {Http} from "../networking/NetworkHttp";
 
-export interface ScheduleRepo {
+export default interface ScheduleRepo {
     getAllSchedules(): Promise<ScheduleResults>
 }
 
@@ -13,10 +13,6 @@ export class NetworkScheduleRepo implements ScheduleRepo {
     }
 
     async getAllSchedules(): Promise<ScheduleResults> {
-        const response = await this.http.get('/api/schedule') as ScheduleResults
-        return {
-            allCount: response.allCount,
-            results: response.results
-        }
+        return await this.http.get('/api/schedule') as ScheduleResults
     }
 }

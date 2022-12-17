@@ -15,5 +15,4 @@ export class NetworkHttp implements Http {
         const response = await axios.get(this.serverUrl + url)
         return Promise.resolve(response.data)
     }
-
 }

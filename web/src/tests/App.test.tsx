@@ -1,9 +1,18 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from '../App';
+import {SpyStubHttp} from "./networking/SpyStubHttp";
+import renderApplication from "./RenderApplication";
+import {screen} from "@testing-library/react";
+import {StubNetworkScheduleRepo} from "./schedule/StubNetworkScheduleRepo";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+let stubScheduleRepo: StubNetworkScheduleRepo
+
+beforeEach(() => {
+    stubScheduleRepo = new StubNetworkScheduleRepo()
+})
+
+test('「全てのワークショップ」の文字が見える', async () => {
+    await renderApplication('/', stubScheduleRepo)
+    const allWorkshops = screen.getByText('全てのワークショップ')
+
+    expect(allWorkshops).toBeInTheDocument()
+})

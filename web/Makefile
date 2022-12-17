@@ -1,2 +1,2 @@
 start:
-	yarn run start
+	source ../.env && yarn run start
